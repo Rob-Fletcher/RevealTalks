@@ -13,7 +13,8 @@ Egamma
 ------
    - May
     + [Template](egamma/template.html)
-
+   - April
+    + [Release Comparisons](egamma/release_comparison.html)
 
 Di-Photon
 =================================
