@@ -227,20 +227,24 @@ body {
 /*********************************************
  * IMAGES
  *********************************************/
-.reveal section img {
-  margin: 2px;
+.reveal section img p{
+  margin: 1px;
+  font-size: 14px;
 }
 
 .slides .blockPlot {
-  display: inline-block;
+  float:left;
   width: 48%;
   margin: 0;
   padding: 0;
 }
 
-.slides .plot p{
+.slides .plot {
   display: inline-block;
+  font-size: 18px;
   margin: 0px;
+  max-height: 80%;
+  max-width: 80%;
 }
 
 .reveal a img {
