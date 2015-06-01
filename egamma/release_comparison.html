@@ -29,7 +29,7 @@
 			<!-- Each section element contains an individual slide -->
 			<section>
 				<h2>Release 19/20 Comparison</h2>
-				<p>Rob Roy Fletcher, Joey Reichert, Kurt Brendlinger, Sarah Heim, Joe Kroll</p>
+				<p class="center">Rob Roy Fletcher, Joey Reichert, Kurt Brendlinger, Sarah Heim, Joe Kroll</p>
 				<h4>University of Pennsylvania</h4>
 				<img src="../Reveal/UPenn.png" width="20%"/>
 			</section>
@@ -53,11 +53,31 @@
 		-->
 			<section>
 				<h4>Online Nod0 && Nominal Offline Et</h4>
-				<p>
-					The plots we looked at before used 50ns Rel 20 samples. This has
-					been fixed. This now compares the correct 25ns Rel 20 sample.
-				</p>
+				<div class="split">
+					<div>
+						<p>
+							We have shown already this inefficiency in Rel 20 but since
+							there are some effects we dont quite understand (Next section) we looked again
+							with a Rel 19 sample.
+						</p>
+						<p>
+							The online Nod0 && Nominal offline still looks close to
+							nominal online && offline. Caveat: online TRT_PID for this sample
+							was not right so this uses the offline values.
+						</p>
+					</div>
+					<div>
+						<img src="egamma/plots/2015/May/rel19_Nod0_ineff_et.png" alt="" />
+						<p>solid triangle = Online Nod0 && Offline <br>
+					hollow triangle = Offline Only <br>
+					solid circle = Online && Offline</p>
+					</div>
+					<p style="font-size: 14px">(mc14_13TeV.147446.PowhegPythia8_AZNLO_Zee_DiLeptonFilter.merge.AOD.e3059_s2044_s2008_r5988_r5853_tid04653126_00
+mc14_13TeV.147446.PowhegPythia8_AZNLO_Zee_DiLeptonFilter.merge.AOD.e3059_s2044_s2008_r5988_r5853_tid04695541_00)</p>
+			</div>
 			</section>
+
+<!--
 			<section>
 				<h4>Online Nod0 && Nominal Offline Et</h4>
 				<div class="plot">
@@ -77,11 +97,250 @@
 					solid circle = Online && Offline</p>
 				</div>
 			</section>
+-->
 
 			<section>
-				<h2>Bit-by-Bit Efficiencies</h2>
+				<h4>Comparison of Rel19 / Rel20</h4>
+				<div class="split">
+					<div>
+						<p>
+							When tuning an Alignment robust offline menu we noticed a difference
+							in efficiency between Rel19 and Rel20 for offline (similar to those reported
+							on May 4th <a href="https://indico.cern.ch/event/391736/contribution/1/material/slides/0.pdf">here</a>).
+						</p>
+						<p>
+							Tuning is done with Rel19 samples and some validation is done on Rel 20.
+						</p>
+					</div>
+					<div>
+						<img src="egamma/plots/2015/May/egammaTPFrame.png" />
+					</div>
+				</div>
 			</section>
 
+			<section>
+				<h4>Rel19, Rel20 Nominal LH Menus</h4>
+				<div class="split">
+					<div>
+						<img src="egamma/plots/2015/May/eff_Et_zoom.png" />
+					</div>
+					<div>
+						<img src="egamma/plots/2015/May/eff_eta.png" />
+					</div>
+				<p class="center">
+					The problem seems to mostly be at high Eta.
+				</p>
+			</div>
+			</section>
+
+			<section>
+				<ul>
+					<li>Pileup for rel 19 and rel 20 are different, but not enough to fully explain
+					the diferences.</li>
+					<li>Since we’re seeing the offline efficiencies as being larger
+						than expected, when the inefficiency is calculated w.r.t. the
+						offline, the losses will appear to be larger. </li>
+					<li>We have done some comparisons on the variables using N-1 LH, Bit-by-Bit efficiencies
+					    and looking at the variable distributions themselves.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h4>Bit-by-Bit Efficiencies</h4>
+				<p>
+					By applying only one cut at a time, we can try to track down
+					the variable(s) responisble. The efficiencies shown are using the
+					same tight cut on only one variable. All plots are offline.
+				</p>
+			</section>
+
+
+			<section>
+				<h4>rhad</h4>
+					<div class="blockPlot">
+						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_TightIsEMMC15_rhadOnly/PlotVars_TightIsEMMC15_rhadOnly_eff_et.png" />
+					</div>
+					<div class="blockPlot">
+						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_TightIsEMMC15_rhadOnly/PlotVars_TightIsEMMC15_rhadOnly_eff_eta.png" />
+					</div>
+					<div class="blockPlot">
+						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_TightIsEMMC15_rhadOnly/PlotVars_TightIsEMMC15_rhadOnly_eff_mu.png" />
+					</div>
+					<div class="blockPlot">
+						<p style="color:blue"> Release 19</p>
+						<p style="color:red"> Release 20 </p>
+						<p>
+							We can see the Rel 20 efficiency is <em>lower</em> then Rel 19 for Rhad.
+							There are some competeing effects.
+						</p>
+					</div>
+			</section>
+
+			<section>
+				<h4>d0</h4>
+					<div class="blockPlot">
+						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_TightIsEMMC15_d0Only/PlotVars_TightIsEMMC15_d0Only_eff_et.png" />
+					</div>
+					<div class="blockPlot">
+						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_TightIsEMMC15_d0Only/PlotVars_TightIsEMMC15_d0Only_eff_eta.png" />
+					</div>
+					<div class="blockPlot">
+						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_TightIsEMMC15_d0Only/PlotVars_TightIsEMMC15_d0Only_eff_mu.png" />
+					</div>
+					<div class="blockPlot">
+						<p style="color:blue"> Release 19</p>
+						<p style="color:red"> Release 20 </p>
+					</div>
+			</section>
+
+
+			<section>
+				<h4>deltaeta</h4>
+					<div class="blockPlot">
+						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_TightIsEMMC15_deltaetaOnly/PlotVars_TightIsEMMC15_deltaetaOnly_eff_et.png" />
+					</div>
+					<div class="blockPlot">
+						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_TightIsEMMC15_deltaetaOnly/PlotVars_TightIsEMMC15_deltaetaOnly_eff_eta.png" />
+					</div>
+					<div class="blockPlot">
+						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_TightIsEMMC15_deltaetaOnly/PlotVars_TightIsEMMC15_deltaetaOnly_eff_mu.png" />
+					</div>
+					<div class="blockPlot">
+						<p style="color:blue"> Release 19</p>
+						<p style="color:red"> Release 20 </p>
+					</div>
+			</section>
+
+			<section>
+				<h2>N-1 Likelihoods</h2>
+				<p>
+					These are LH efficiencies with one variable removed, but with discriminant cut
+					values kept the same. The closer the rel 19
+					and rel 20 plots are, the more different the variables are between these
+					two releases. However it can be difficult to disentangle pileup effects.
+				</p>
+			</section>
+
+			<section>
+				<h4>No Rhad</h4>
+					<div class="blockPlot">
+						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_OfflineTightLLH_NoRhad/PlotVars_OfflineTightLLH_NoRhad_eff_et.png" />
+					</div>
+					<div class="blockPlot">
+						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_OfflineTightLLH_NoRhad/PlotVars_OfflineTightLLH_NoRhad_eff_eta.png" />
+					</div>
+					<div class="blockPlot">
+						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_OfflineTightLLH_NoRhad/PlotVars_OfflineTightLLH_NoRhad_eff_mu.png" />
+					</div>
+					<div class="blockPlot">
+						<p style="color:blue"> Release 19</p>
+						<p style="color:red"> Release 20 </p>
+					</div>
+			</section>
+
+			<section>
+				<h4>No D0</h4>
+					<div class="blockPlot">
+						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_OfflineTightLLH_NoD0/PlotVars_OfflineTightLLH_NoD0_eff_et.png" />
+					</div>
+					<div class="blockPlot">
+						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_OfflineTightLLH_NoD0/PlotVars_OfflineTightLLH_NoD0_eff_eta.png" />
+					</div>
+					<div class="blockPlot">
+						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_OfflineTightLLH_NoD0/PlotVars_OfflineTightLLH_NoD0_eff_mu.png" />
+					</div>
+					<div class="blockPlot">
+						<p style="color:blue"> Release 19</p>
+						<p style="color:red"> Release 20 </p>
+					</div>
+			</section>
+
+			<section>
+				<h4>No DeltaEta1</h4>
+					<div class="blockPlot">
+						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_OfflineTightLLH_NoDeltaEta1/PlotVars_OfflineTightLLH_NoDeltaEta1_eff_et.png" />
+					</div>
+					<div class="blockPlot">
+						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_OfflineTightLLH_NoDeltaEta1/PlotVars_OfflineTightLLH_NoDeltaEta1_eff_eta.png" />
+					</div>
+					<div class="blockPlot">
+						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_OfflineTightLLH_NoDeltaEta1/PlotVars_OfflineTightLLH_NoDeltaEta1_eff_mu.png" />
+					</div>
+					<div class="blockPlot">
+						<p style="color:blue"> Release 19</p>
+						<p style="color:red"> Release 20 </p>
+					</div>
+			</section>
+
+			<section>
+				<h4>Differences in variable distributions</h4>
+				<div class="split">
+				  <div class="">
+						<p>
+							We also see these differences in the LH PDFs.
+						</p>
+						<p>
+							The shower shapes tend to be narrower, but this could
+							be partly due to pileup effects.
+						</p>
+				  </div>
+					<div class="">
+							<h5>Reta</h5>
+							<img src="egamma/plots/2015/May/reta_sig_PDF.png"/>
+							<p style="color:blue"> Release 19</p>
+							<p style="color:red"> Release 20 </p>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="split">
+					<div class="">
+						<h5>d0 sig</h5>
+						<img src="egamma/plots/2015/May/d0significance_sig_PDF.png" alt="" />
+					</div>
+
+					<div class="">
+							<h5>Delta Eta</h5>
+							<img src="egamma/plots/2015/May/deltaeta1_sig_PDF.png" alt="" />
+					</div>
+							<p style="color:blue; text-align:center"> Release 19</p>
+							<p style="color:red; text-align:center"> Release 20 </p>
+				</div>
+			</section>
+
+			<section>
+				<h4>Summary</h4>
+				<ul>
+					<li>In tuning new menus we noticed a difference in offline efficiencies
+					    between Rel 19 and Rel 20.</li>
+					<li>It looks like several variables are contributing, but a little more
+					    work needs to be done to disentangle any pileup effects.</li>
+					<li>This difference seens to come mostly from high Eta.</li>
+					<li>Will talk to Calo and tracking experts to find out exactly what changes were
+					    made going into Rel 20 and if these were intensional.</li>
+					<li>All Bit-by-Bit and N-1 LH plots in backup.</li>
+				</ul>
+			</section>
+
+			<section>
+				<ul>
+					<li style="font-size: 18px">(Rel 19, 25ns) mc14_13TeV.147446.PowhegPythia8_AZNLO_Zee_DiLeptonFilter.merge.AOD.e3059_s2044_s2008_r5988_r5853</li>
+					<li style="font-size: 18px">(Rel 20, 50ns) valid3.147406.PowhegPythia8_AZNLO_Zee.recon.AOD.e3099_s2578_r6551</li>
+					<li style="font-size: 18px">(Rel 20, 25ns) valid3.147406.PowhegPythia8_AZNLO_Zee.recon.AOD.e3099_s2578_r6651_tid05403299_00</li>
+				</ul>
+			</section>
+
+			<!--   Backup Slides ============================-->
+
+
+			<section>
+				<h2>Backup</h2>
+			</section>
+
+			<section>
+				<h2>Bit-by-bit Efficiencies</h2>
+			</section>
 			<section>
 				<h4>Reta</h4>
 					<div class="blockPlot">
@@ -151,22 +410,6 @@
 					</div>
 			</section>
 
-			<section>
-				<h4>f1</h4>
-					<div class="blockPlot">
-						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_TightIsEMMC15_f1Only/PlotVars_TightIsEMMC15_f1Only_eff_et.png" />
-					</div>
-					<div class="blockPlot">
-						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_TightIsEMMC15_f1Only/PlotVars_TightIsEMMC15_f1Only_eff_eta.png" />
-					</div>
-					<div class="blockPlot">
-						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_TightIsEMMC15_f1Only/PlotVars_TightIsEMMC15_f1Only_eff_mu.png" />
-					</div>
-					<div class="blockPlot">
-						<p style="color:blue"> Release 19</p>
-						<p style="color:red"> Release 20 </p>
-					</div>
-			</section>
 
 
 			<section>
@@ -221,22 +464,6 @@
 					</div>
 			</section>
 
-			<section>
-				<h4>d0</h4>
-					<div class="blockPlot">
-						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_TightIsEMMC15_d0Only/PlotVars_TightIsEMMC15_d0Only_eff_et.png" />
-					</div>
-					<div class="blockPlot">
-						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_TightIsEMMC15_d0Only/PlotVars_TightIsEMMC15_d0Only_eff_eta.png" />
-					</div>
-					<div class="blockPlot">
-						<img src="egamma/plots/2015/May/rel19_rel20_comparison/overlays/PlotVars_TightIsEMMC15_d0Only/PlotVars_TightIsEMMC15_d0Only_eff_mu.png" />
-					</div>
-					<div class="blockPlot">
-						<p style="color:blue"> Release 19</p>
-						<p style="color:red"> Release 20 </p>
-					</div>
-			</section>
 
 			<section>
 				<h4>TRTProb</h4>
@@ -261,8 +488,7 @@
 				<p>
 					These are LH efficiencies with one variable removed. The closer the rel 19
 					and rel 20 plots are, the more different the variables are between these
-					two releases. All of the following mu plots are mislabeled. They should
-					say Nvtx.
+					two releases.
 				</p>
 			</section>
 
