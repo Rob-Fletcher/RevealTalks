@@ -1,0 +1,87 @@
+/*===============================
+    General Setup
+================================*/
+
+/* Images */
+.reveal section img {
+  margin: 0;
+  background: none;
+  border: 0;
+  box-shadow: none; }
+
+/* Slide layout Templates */
+
+/* Vertically split slide */
+.Vsplit {
+  border: 0;
+  padding: 0;
+}
+.Vsplit div.left {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.Vsplit div.right {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.Vsplit img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.Vsplit p,
+.Vsplit h4,
+.Vsplit h3,
+.Vsplit ul,
+.Vsplit li {
+  word-wrap: break-word;
+}
+
+/* Split page into 4 quadrents   */
+.quad {
+  border: 0;
+  padding: 0;
+}
+
+.quad div.upl,
+.quad div.upr {
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+
+.quad div.lowl,
+.quad div.lowr {
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+
+#banner{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+}
+
+#footer{
+  width: 100%;
+  height: 5%;
+}
+
+/* Split slide horrizontally */
+.Hsplit {
+  border: 0;
+  padding: 0;
+}
+.Hsplit div.up{
+  width: 100%;
+  height: 50%;
+}
+.Hsplit div.low{
+  width: 100%;
+  height: 50%;
+}
