@@ -7,21 +7,28 @@
   margin: 0;
   background: none;
   border: 0;
-  box-shadow: none; }
+  box-shadow: none;
+  }
 
 /* Slide layout Templates */
 
 /* Vertically split slide */
 .Vsplit {
-  border: 0;
-  padding: 0;
+  border: 2px solid purple;
+  padding: 2px;
+  max-height: 100%;
+  max-width: 100;
 }
 .Vsplit div.left {
+  display: inline;
+  border: 2px solid green;
   width: 50%;
   height: 100%;
   float: left;
 }
 .Vsplit div.right {
+  display: inline;
+  border: 2px solid green;
   width: 50%;
   height: 100%;
   float: left;
@@ -58,6 +65,35 @@
   height: 50%;
   float: left;
 }
+.quad img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Split slide horrizontally */
+.Hsplit {
+  border: 0;
+  padding: 0;
+  max-height: 100%;
+  max-width: 100%;
+}
+.Hsplit div.up{
+  border: 2px solid white;
+  padding: 2px;
+  width: 100%;
+  height: 50%;
+}
+.Hsplit div.low{
+  border: 2px solid white;
+  padding: 2px;
+  width: 100%;
+  height: 50%;
+}
+.Hsplit div.low img {
+  max-height: 95%;
+  max-width: 95%;
+}
+
 
 #banner{
   position: fixed;
@@ -84,4 +120,9 @@
 .Hsplit div.low{
   width: 100%;
   height: 50%;
+}
+.Hsplit div.up img
+.Hsplit div.low img {
+  max-height: 100%;
+  max-width: 100%;
 }

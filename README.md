@@ -15,6 +15,10 @@ Egamma
     + [Template](egamma/template.html)
    - April
     + [Release Comparisons](egamma/release_comparison.html)
+   - June
+    + [Finalize Release comparison](egamma/tracking_comparison.html)
+        This talk will be given at egamma Tag and Probe Monday June 8th.
+        It finalizes some of our studies on Rel 19 and Rel 20 comparisons.
 
 Di-Photon
 =================================
