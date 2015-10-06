@@ -4,8 +4,9 @@
 	<meta charset="utf-8">
 	<title>Reveal.js 3 Slide Demo</title>
 	<link rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/reveal.css">
-	<link rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/theme/blood.css" id="theme">
+	<link rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/theme/white.css" id="theme">
 	<link rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/theme/penn.css" id="theme">
+	<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML.js'></script>
 	<!--Add support for earlier versions of Internet Explorer -->
 	<!--[if lt IE 9]>
 	<script src="lib/js/html5shiv.js"></script>
@@ -27,21 +28,26 @@
 				<img src="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/UPenn.png" width="20%"/>
 			</section>
 
-			<section id="show-a-link">
-				<h1>Show a live link</h1>
-				<p>Slide 2 discussed here</p>
-				<p>See <a href="http://www.htmlcheats.com">HTMLCheats.com</a><p>
+			<section>
+				<h1>MathJax example</h1>
+				<p>$$\int \frac{1}{1-x} dx  $$</p>
 			</section>
 
 			<section>
-				<h1>Slide 3</h1>
-				<p>How does one revisit an arbitrary slide in code?</p>
-				<p>Visit internal slide<a href="#/show-a-link"> 2</a>
+				<h1>Lists</h1>
+				<ul>
+						<li class="fragment" data-fragment-index="1">First thing</li>
+						<li class="fragment" data-fragment-index="2">Second thing</li>
+						<li class="fragment" data-fragment-index="3">Third thing</li>
+				</ul>
+				<aside class="notes">
+					Some notes up in here.
+				</aside>
 			</section>
 
 			</div>
 	</div>
-	<script src="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/lib/js/head.js"></script>
+	<script src="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/lib/js/head.min.js"></script>
 	<script src="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/js/reveal.js"></script>
 
 	<script>
