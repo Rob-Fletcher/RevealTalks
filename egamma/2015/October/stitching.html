@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Release 19/20 Comparison</title>
+	<title>Reveal.js 3 Slide Demo</title>
 	<link rel="stylesheet" href="../Reveal/css/reveal.css">
 	<link rel="stylesheet" href="../Reveal/css/theme/blood.css" id="theme">
-	<link rel="stylesheet" href="../Reveal/css/theme/penn.css">
 	<!--Add support for earlier versions of Internet Explorer -->
 	<!--[if lt IE 9]>
 	<script src="lib/js/html5shiv.js"></script>
 	<![endif]-->
-  <!-- Printing and PDF exports -->
+	<!-- Printing and PDF exports -->
   <script>
       var link = document.createElement( 'link' );
       link.rel = 'stylesheet';
@@ -28,33 +27,21 @@
 
 			<!-- ALL SLIDES GO HERE -->
 			<!-- Each section element contains an individual slide -->
+			<section>
+				<h2>Title</h2>
+				<p>Rob Roy Fletcher, Joey Reichert, Kurt Brendlinger, Sarah Heim, Joe Kroll</p>
+				<h4>University of Pennsylvania</h4>
+				<img src="../Reveal/Upenn.png" width="20%"/>
+			</section>
 
-            <section>
-							<div class="Hsplit">
-								<p>HSplit</p>
+			<section id="show-a-link">
+        <img src="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/egamma/egamma/plots/2015/October/LHDisc_et2_eta0_vlooseStitch.gif" alt="" />
+			</section>
 
-								<div class="up">
+			<section>
+        <img src="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/egamma/egamma/plots/2015/October/LHDisc_et4_eta0_vlooseStitch.gif" alt="" />
+			</section>
 
-								<div class="Vsplit">
-									<p> Vsplit </p>
-									<div class="left">
-										<p> Left </p>
-									</div>
-									<div class="right">
-									  <p> Right </p>
-									</div>
-								</div>
-							</div>
-
-								<div class="low">
-									<p> Lower </p>			
-								</div>
-
-							</div>
-            </section>
-
-
-			<!--    END OF SLIDES  -->
 			</div>
 	</div>
 	<script src="../Reveal/lib/js/head.js"></script>
@@ -63,10 +50,9 @@
 	<script>
 		// Required, even if empty.
 		Reveal.initialize({
-			margin: 0
 		});
 		Reveal.configure({
-			slideNumber: true
+			slideNumber: true;
 		});
 	</script>
 </body>
