@@ -1,0 +1,21 @@
+head
+	title #{title}
+	link(rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/reveal.css")
+	link(rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/theme/blood.css" id="theme")
+	link(rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/theme/penn.css" id="theme")
+	script(src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML')
+
+body
+	.reveal
+		.slides
+			block content
+			
+			
+	script(src="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/lib/js/head.js")
+	script(src="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/js/reveal.js")
+
+	script.
+		// Required, even if empty.
+		Reveal.initialize({
+			slideNumber: true
+		});
