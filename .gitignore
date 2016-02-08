@@ -1,0 +1,6 @@
+## OSX crap
+*.DS_Store
+
+## Files that shouldnt be tracked
+/egamma/egamma
+/egamma/pdfExport/
