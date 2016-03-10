@@ -1,0 +1,20 @@
+extends ../../EgammaLayout.jade
+block vars
+    -var title = 'PDFs update';
+
+block content
+    section
+        h3 Update to the Fakes Selection
+        p Some structure changes have been made to make the code.
+            | Easier to read, easier to test, and be more future proof.
+        p The trigger selection and stitching used to be done like this:
+        
+        pre: code.cpp if(m_EDM->eventFiresTrigger("HLT_e10_etcut.*")  && 
+            |    !m_EDM->eventFiresTrigger("HLT_e10_lhvloose*")  && 
+            |    passesVeryLoose && 11*GeV < m_EDM->get_el_pt(iEle)  && 
+            |    m_EDM->get_el_pt(iEle) < 16*GeV) continue;
+            
+        p It is now done like this:
+        pre: code.cpp 
+    section
+        h3 This is an h3 header.

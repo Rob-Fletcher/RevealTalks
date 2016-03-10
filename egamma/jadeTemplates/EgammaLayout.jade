@@ -1,21 +1,47 @@
 head
 	title #{title}
 	link(rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/reveal.css")
-	link(rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/theme/blood.css" id="theme")
+	link(rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/theme/league.css" id="theme")
 	link(rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/theme/penn.css" id="theme")
-	script(src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML')
+	link(rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/lib/css/zenburn.css")
 
 body
 	.reveal
 		.slides
+			block vars
+			//title slide
+			section
+				h2 #{title}
+				p Rob Roy Fletcher, Joey Reichert, Lucas Flores, Joe Kroll
+				h4 University of Pennsylvania
+				img(src="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/UPenn.png" width="20%")
+			// --------------------
 			block content
 			
 			
-	script(src="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/lib/js/head.js")
+	script(src="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/lib/js/head.min.js")
 	script(src="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/js/reveal.js")
 
 	script.
 		// Required, even if empty.
 		Reveal.initialize({
-			slideNumber: true
+			slideNumber: true,
+			
+			dependencies: [
+				// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+				//{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+				// Interpret Markdown in <section> elements
+				//{ src: 'http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				//{ src: 'http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+				// Syntax highlight for <code> elements
+				{ src: 'http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+
+				// Speaker notes
+				//{ src: 'http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/plugin/notes/notes.js', async: true },
+
+				// MathJax
+				//{ src: 'http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/plugin/math/math.js', async: true }
+			]
 		});
