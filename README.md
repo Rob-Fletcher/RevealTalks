@@ -10,11 +10,15 @@ new talks. It needs a lot of work.
 ##May 2016
 Made new template using [pug(jade)](http://jade-lang.com/). To use this you must have installed [Node.js](https://nodejs.org/en/) and
 the Node Package Manager (npm). You can then install pug with
+
     npm install pug-cli --global
+
 This will allow you to render the pug templates into HTML. An example template can be found [here](Diphoton/2016/May/TalkExample.pug).
 This automatically includes the layout and all you need to add is a `section` element for each slide you want to create.
 You can then compile this template into HTML. In the directory containing the template run,
+
     pug TalkExample.pug -P
+    
 This will generate *TalkExample.html* in the same folder. This file will have all header and script includes needed as well as all of
 your slide content.
 
