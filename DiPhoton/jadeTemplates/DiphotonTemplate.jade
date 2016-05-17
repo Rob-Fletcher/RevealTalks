@@ -1,14 +1,14 @@
 head
 	title #{title}
-	//link(rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/reveal.css")
-	//link(rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/theme/league.css" id="theme")
-	//link(rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/theme/penn.css" id="theme")
-	//link(rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/lib/css/zenburn.css")
+	link(rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/reveal.css")
+	link(rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/theme/league.css" id="theme")
+	link(rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/theme/penn.css" id="theme")
+	link(rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/lib/css/zenburn.css")
 	//local includes
-	link(rel="stylesheet" href="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/css/reveal.css")
-	link(rel="stylesheet" href="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/css/theme/league.css" id="theme")
-	link(rel="stylesheet" href="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/css/theme/penn.css" id="theme")
-	link(rel="stylesheet" href="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/lib/css/zenburn.css")
+	//link(rel="stylesheet" href="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/css/reveal.css")
+	//link(rel="stylesheet" href="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/css/theme/league.css" id="theme")
+	//link(rel="stylesheet" href="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/css/theme/penn.css" id="theme")
+	//link(rel="stylesheet" href="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/lib/css/zenburn.css")
 
 body
 	.reveal
@@ -24,11 +24,11 @@ body
 			block content
 
 
-	//script(src="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/lib/js/head.min.js")
-	//script(src="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/js/reveal.js")
+	script(src="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/lib/js/head.min.js")
+	script(src="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/js/reveal.js")
 	// local includes
-	script(src="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/lib/js/head.min.js")
-	script(src="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/js/reveal.js")
+	//script(src="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/lib/js/head.min.js")
+	//script(src="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/js/reveal.js")
 
 	script.
 		// Required, even if empty.
@@ -46,16 +46,16 @@ body
 				//{ src: 'http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 
 				// Syntax highlight for <code> elements
-				//{ src: 'http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				{ src: 'http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				// local include
-				{ src: '/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				//{ src: '/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 
 				// Speaker notes
 				//{ src: 'http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/plugin/notes/notes.js', async: true },
 
 				// MathJax
-				//,{ src: 'http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/plugin/math/math.js', async: true }
+				,{ src: 'http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/plugin/math/math.js', async: true }
 				//local include
-				,{ src: '/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/plugin/math/math.js', async: true }
+				//,{ src: '/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/plugin/math/math.js', async: true }
 			]
 		});

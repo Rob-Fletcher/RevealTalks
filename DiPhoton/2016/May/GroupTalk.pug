@@ -74,18 +74,18 @@ block content
         P We are interested in the so called "Warp Factor" \(e^{-2A(y)}\). We must determine the function \(A(y)\).
 
     section(data-background="#000000")
-        div(style="background-color: rgb(20, 98, 135); width: 100%; height: 500%; position: absolute; top: -100%; left: -45%; z-index: -1;")
-        div(style="height: 100%;")
+        div(style="background-color: rgb(20, 98, 135); width: 100%; height: 400%; position: absolute; top: -100%; left: -45%; z-index: -1;")
+        div
             div(style="width: 50%; display: inline-block; margin-right: 5%; vertical-align: top;")
                 p(style="text-align: right;") To find \(A(y)\) we must use the 5D Einstein equations
             div(style="width: 40%; display: inline-block;")
-                p(style="text-align: left;") $$ G_{MN} = R_{MN} - \frac{1}{2}g_{MN}R = \kappa^2T_{MN},\\ \kappa^2 \equiv \frac{1}{2M^3} $$
+                p(style="text-align: left; font-size: 24px;") $$ G_{MN} = R_{MN} - \frac{1}{2}g_{MN}R = \kappa^2T_{MN},\\ \kappa^2 \equiv \frac{1}{2M^3} $$
 
         div.fragment(style="margin: 50px 0px;")
             div(style="width: 50%; display: inline-block; margin-right: 5%; vertical-align: top;")
                 p(style="text-align: right;") The stress-energy tensor in this case is
             div(style="width: 40%; display: inline-block;")
-                p(style="text-align: left;") $$ T_{MN} =  \frac{-2}{\sqrt{-g}} \frac{\delta S_{M}}{\delta g^{}MN} $$
+                p(style="text-align: left;") $$ T_{MN} =  \frac{-2}{\sqrt{-g}} \frac{\delta S_{M}}{\delta g^{MN}} $$
 
         div.fragment(style="margin: 50px 0px;")
             div(style="width: 50%; display: inline-block; margin-right: 5%; vertical-align: top;")
@@ -95,7 +95,7 @@ block content
 
         div.fragment(style="margin: 50px 0px;")
             div(style="width: 50%; display: inline-block; margin-right: 5%; vertical-align: top;")
-                p(style="text-align: right;") Then the extra dimension component of the Einstein Tensor is
+                p(style="text-align: right;") Then the extra dimension component of the Einstein Tensor
             div(style="width: 40%; display: inline-block;")
                 p(style="text-align: left;") $$ G_{55} = 6A'^2 = \frac{-\Lambda}{2M^3} $$
 
@@ -111,7 +111,7 @@ block content
             div(style="width: 50%; display: inline-block; margin-right: 5%; vertical-align: top;")
                 p(style="text-align: right;") Integrating over y
             div(style="width: 40%; display: inline-block;")
-                p(style="text-align: left;") $$ A(y) = \plusminus ky $$
+                p(style="text-align: left;") $$ A(y) = \pm ky $$
 
         div.fragment(style="margin: 50px 0px;")
             div(style="width: 50%; display: inline-block; margin-right: 5%; vertical-align: top;")
@@ -119,8 +119,59 @@ block content
             div(style="width: 40%; display: inline-block;")
                 p(style="text-align: left;") $$ A(y) = k|y| $$
 
-        div.fragment(style="margin: 50px 0px;")
-            div(style="width: 50%; display: inline-block; margin-right: 5%; vertical-align: top;")
-                p(style="text-align: right;") And so we have the line element
-            div(style="width: 40%; display: inline-block;")
-                p(style="text-align: left;") $$ ds^2 = e^{-2k|y|} \eta_{\mu\nu}dx^\mu dx^\nu + dy^2 $$
+    section
+        p And so, finally, we have the line element
+        p.math $$ ds^2 = e^{-2k|y|} \eta_{\mu\nu}dx^\mu dx^\nu + dy^2 $$
+        p where our warped metric is
+        p.math $$ g_{\mu\nu} = e^{-2k|y|}\eta_{\mu\nu} $$
+
+    section
+        h3 Back to Particles
+        p Now that we have our metric we can return to what we care about
+        h2.fragment Particles!
+
+    section
+        p Consider the Higgs field with the action
+
+        p.math(style="text-align: left") $$ S_{Higgs} = \int d^4x \sqrt{g} [g^{\mu\nu} D_\mu H^{\dagger} D_\nu H - \lambda(H^{\dagger}H-v^2)^2] $$
+
+        p We substitute the metric we found at the matter brane \( (y = L) \)
+
+        p.math $$ S_{Higgs} = \int d^4x e^{-4kL} [e^{2kL}\eta^{\mu\nu} D_\mu H^{\dagger} D_\nu H - \lambda(H^{\dagger}H-v^2)^2] $$
+
+    section
+        p Then to get a canonically normalized action we make the substitution \(H = e^{kL} \tilde{H} \)
+
+        p.math(style="text-align: left") $$ S_{Higgs} = \int d^4x  [\eta^{\mu\nu} D_\mu \tilde{H}^{\dagger} D_\nu \tilde{H} - \lambda(\tilde{H}^{\dagger}\tilde{H}-(e^{-kL}v)^2)^2] $$
+
+        p This is the normal Higgs action except the vacuum expectation value is exponentially supressed.
+
+        p.math $$ v_{eff} = e^{-kL}v $$
+
+
+    section
+        p Because the Higgs vev is responsible for the mass parameters in the SM, this naturally generates
+            |  a heirarchy on the matter brane.
+        img(src="images/RSvev.png")
+
+    section
+        p Considering that \(M_{W} \simeq 10^{-16}M_{Pl} \) then we can estimate the size of the extra dimesion
+        p $$ kL \simeq 35 $$
+        p More often in papers the quantity \( k/M_{Pl} \sim \mathcal{O}(0.1) \) is used.
+        img(src="images/RSresonances.png" style="height: 50%")
+
+    section
+        h3 Summary
+        ul
+            li We have seen an outline of how the Randall-Sundrum Model is defines an extra space dimension.
+            li We used the shape of this extra dimesion to calculate the "warp factor" and the metric.
+            li This metric was then used to show how this model can generate a natural heirarchy on the 3+1 matter brane.
+
+        p
+        p(style="text-align: left; font-size: 22px;")
+            i "A Large Mass Heirarchy from a Small Extra Dimension", L. Randall, R. Sundrum, arXiv:hep-ph/9905221
+        p(style="text-align: left; font-size: 22px;")
+            i "The Randall-Sundrum Model", Maxime Gabella, June 2006, IPPC, EPEL
+
+    section
+        img(src="images/IWTBPoster.jpg" style="height: 100%")

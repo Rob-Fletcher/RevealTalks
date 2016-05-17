@@ -1,15 +1,15 @@
 
 <head>
   <title></title>
-  <!--link(rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/reveal.css")-->
-  <!--link(rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/theme/league.css" id="theme")-->
-  <!--link(rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/theme/penn.css" id="theme")-->
-  <!--link(rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/lib/css/zenburn.css")-->
+  <link rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/reveal.css"/>
+  <link rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/theme/league.css" id="theme"/>
+  <link rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/css/theme/penn.css" id="theme"/>
+  <link rel="stylesheet" href="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/lib/css/zenburn.css"/>
   <!--local includes-->
-  <link rel="stylesheet" href="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/css/reveal.css"/>
-  <link rel="stylesheet" href="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/css/theme/league.css" id="theme"/>
-  <link rel="stylesheet" href="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/css/theme/penn.css" id="theme"/>
-  <link rel="stylesheet" href="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/lib/css/zenburn.css"/>
+  <!--link(rel="stylesheet" href="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/css/reveal.css")-->
+  <!--link(rel="stylesheet" href="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/css/theme/league.css" id="theme")-->
+  <!--link(rel="stylesheet" href="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/css/theme/penn.css" id="theme")-->
+  <!--link(rel="stylesheet" href="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/lib/css/zenburn.css")-->
 </head>
 <body>
   <div class="reveal">
@@ -102,13 +102,13 @@
         <P>We are interested in the so called "Warp Factor" \(e^{-2A(y)}\). We must determine the function \(A(y)\).</P>
       </section>
       <section data-background="#000000">
-        <div style="background-color: rgb(20, 98, 135); width: 100%; height: 500%; position: absolute; top: -100%; left: -45%; z-index: -1"></div>
-        <div style="height: 100%">
+        <div style="background-color: rgb(20, 98, 135); width: 100%; height: 400%; position: absolute; top: -100%; left: -45%; z-index: -1"></div>
+        <div>
           <div style="width: 50%; display: inline-block; margin-right: 5%; vertical-align: top">
             <p style="text-align: right">To find \(A(y)\) we must use the 5D Einstein equations</p>
           </div>
           <div style="width: 40%; display: inline-block">
-            <p style="text-align: left">$$ G_{MN} = R_{MN} - \frac{1}{2}g_{MN}R = \kappa^2T_{MN},\\ \kappa^2 \equiv \frac{1}{2M^3} $$</p>
+            <p style="text-align: left; font-size: 24px">$$ G_{MN} = R_{MN} - \frac{1}{2}g_{MN}R = \kappa^2T_{MN},\\ \kappa^2 \equiv \frac{1}{2M^3} $$</p>
           </div>
         </div>
         <div class="fragment" style="margin: 50px 0px">
@@ -116,7 +116,7 @@
             <p style="text-align: right">The stress-energy tensor in this case is</p>
           </div>
           <div style="width: 40%; display: inline-block">
-            <p style="text-align: left">$$ T_{MN} =  \frac{-2}{\sqrt{-g}} \frac{\delta S_{M}}{\delta g^{}MN} $$</p>
+            <p style="text-align: left">$$ T_{MN} =  \frac{-2}{\sqrt{-g}} \frac{\delta S_{M}}{\delta g^{MN}} $$</p>
           </div>
         </div>
         <div class="fragment" style="margin: 50px 0px">
@@ -129,7 +129,7 @@
         </div>
         <div class="fragment" style="margin: 50px 0px">
           <div style="width: 50%; display: inline-block; margin-right: 5%; vertical-align: top">
-            <p style="text-align: right">Then the extra dimension component of the Einstein Tensor is</p>
+            <p style="text-align: right">Then the extra dimension component of the Einstein Tensor</p>
           </div>
           <div style="width: 40%; display: inline-block">
             <p style="text-align: left">$$ G_{55} = 6A'^2 = \frac{-\Lambda}{2M^3} $$</p>
@@ -151,7 +151,7 @@
             <p style="text-align: right">Integrating over y</p>
           </div>
           <div style="width: 40%; display: inline-block">
-            <p style="text-align: left">$$ A(y) = \plusminus ky $$</p>
+            <p style="text-align: left">$$ A(y) = \pm ky $$</p>
           </div>
         </div>
         <div class="fragment" style="margin: 50px 0px">
@@ -162,22 +162,58 @@
             <p style="text-align: left">$$ A(y) = k|y| $$</p>
           </div>
         </div>
-        <div class="fragment" style="margin: 50px 0px">
-          <div style="width: 50%; display: inline-block; margin-right: 5%; vertical-align: top">
-            <p style="text-align: right">And so we have the line element</p>
-          </div>
-          <div style="width: 40%; display: inline-block">
-            <p style="text-align: left">$$ ds^2 = e^{-2k|y|} \eta_{\mu\nu}dx^\mu dx^\nu + dy^2 $$</p>
-          </div>
-        </div>
       </section>
+      <section>
+        <p>And so, finally, we have the line element</p>
+        <p class="math">$$ ds^2 = e^{-2k|y|} \eta_{\mu\nu}dx^\mu dx^\nu + dy^2 $$</p>
+        <p>where our warped metric is</p>
+        <p class="math">$$ g_{\mu\nu} = e^{-2k|y|}\eta_{\mu\nu} $$</p>
+      </section>
+      <section>
+        <h3>Back to Particles</h3>
+        <p>Now that we have our metric we can return to what we care about</p>
+        <h2 class="fragment">Particles!</h2>
+      </section>
+      <section>
+        <p>Consider the Higgs field with the action</p>
+        <p class="math" style="text-align: left">$$ S_{Higgs} = \int d^4x \sqrt{g} [g^{\mu\nu} D_\mu H^{\dagger} D_\nu H - \lambda(H^{\dagger}H-v^2)^2] $$</p>
+        <p>We substitute the metric we found at the matter brane \( (y = L) \)</p>
+        <p class="math">$$ S_{Higgs} = \int d^4x e^{-4kL} [e^{2kL}\eta^{\mu\nu} D_\mu H^{\dagger} D_\nu H - \lambda(H^{\dagger}H-v^2)^2] $$</p>
+      </section>
+      <section>
+        <p>Then to get a canonically normalized action we make the substitution \(H = e^{kL} \tilde{H} \)</p>
+        <p class="math" style="text-align: left">$$ S_{Higgs} = \int d^4x  [\eta^{\mu\nu} D_\mu \tilde{H}^{\dagger} D_\nu \tilde{H} - \lambda(\tilde{H}^{\dagger}\tilde{H}-(e^{-kL}v)^2)^2] $$</p>
+        <p>This is the normal Higgs action except the vacuum expectation value is exponentially supressed.</p>
+        <p class="math">$$ v_{eff} = e^{-kL}v $$</p>
+      </section>
+      <section>
+        <p>
+          Because the Higgs vev is responsible for the mass parameters in the SM, this naturally generates a heirarchy on the matter brane.</p><img src="images/RSvev.png"/>
+      </section>
+      <section>
+        <p>Considering that \(M_{W} \simeq 10^{-16}M_{Pl} \) then we can estimate the size of the extra dimesion</p>
+        <p>$$ kL \simeq 35 $$</p>
+        <p>More often in papers the quantity \( k/M_{Pl} \sim \mathcal{O}(0.1) \) is used.</p><img src="images/RSresonances.png" style="height: 50%"/>
+      </section>
+      <section>
+        <h3>Summary</h3>
+        <ul>
+          <li>We have seen an outline of how the Randall-Sundrum Model is defines an extra space dimension.</li>
+          <li>We used the shape of this extra dimesion to calculate the "warp factor" and the metric.</li>
+          <li>This metric was then used to show how this model can generate a natural heirarchy on the 3+1 matter brane.</li>
+        </ul>
+        <p></p>
+        <p style="text-align: left; font-size: 22px"><i>"A Large Mass Heirarchy from a Small Extra Dimension", L. Randall, R. Sundrum, arXiv:hep-ph/9905221</i></p>
+        <p style="text-align: left; font-size: 22px"><i>"The Randall-Sundrum Model", Maxime Gabella, June 2006, IPPC, EPEL</i></p>
+      </section>
+      <section><img src="images/IWTBPoster.jpg" style="height: 100%"/></section>
     </div>
   </div>
-  <!--script(src="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/lib/js/head.min.js")-->
-  <!--script(src="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/js/reveal.js")-->
+  <script src="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/lib/js/head.min.js"></script>
+  <script src="http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/js/reveal.js"></script>
   <!-- local includes-->
-  <script src="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/lib/js/head.min.js"></script>
-  <script src="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/js/reveal.js"></script>
+  <!--script(src="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/lib/js/head.min.js")-->
+  <!--script(src="/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/js/reveal.js")-->
   <script>
     // Required, even if empty.
     Reveal.initialize({
@@ -194,17 +230,17 @@
     		//{ src: 'http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
     
     		// Syntax highlight for <code> elements
-    		//{ src: 'http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+    		{ src: 'http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
     		// local include
-    		{ src: '/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+    		//{ src: '/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
     
     		// Speaker notes
     		//{ src: 'http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/plugin/notes/notes.js', async: true },
     
     		// MathJax
-    		//,{ src: 'http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/plugin/math/math.js', async: true }
+    		,{ src: 'http://hn.hep.upenn.edu/Analysis/robflet/html/Presentations/RevealTalks/Reveal/plugin/math/math.js', async: true }
     		//local include
-    		,{ src: '/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/plugin/math/math.js', async: true }
+    		//,{ src: '/Users/Rob/Documents/Atlas/talks/RevealTalks/Reveal/plugin/math/math.js', async: true }
     	]
     });
   </script>
