@@ -1,0 +1,31 @@
+extends ../../jadeTemplates/DiphotonTemplate.jade
+block vars
+    -var title = "2011 ADD Analysis";
+    
+    
+block content
+    section
+        h3 Counting Experiment
+        
+        p In 2011 a counting experiment was performed to find broad excesses. 
+        p First a cut is made on  $M_{\gamma\gamma} > 1217 GeV$. Count all events that pass cut.
+        
+        img(src="images/PoissonProb.png")    
+        p Using Bayes theorem:
+        img(src="images/PoissonBayes.png")
+        
+        p Here the background comes from a MC template.
+        
+    section
+        p Then to get the Beyesian upper limit at the 95% CL:
+        img(src="images/CLs_N95.png")
+        p $N_{95}$ is then our observed limit on the number of events which for this analysis was found to be #[strong 7.21] events
+            |  given #[strong 4] events in data with an expected #[strong 2.32] background events.
+
+    section
+        h3 Optimizing the $M_{\gamma\gamma}$ Cut
+        p Using the grid point $n_{ED}=2$, $M_S=2500 GeV$ they minimized a "figure of merit":
+        img(src="images/figure_of_merit.png")
+        p Here $N_{95}$ is computed from above. The 'tot' contribution is from the MC signal samples
+            |  and the SM is from the background templates. This corresponds to the smallest expected
+            |  cross-section of NP.
